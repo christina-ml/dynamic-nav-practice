@@ -1,0 +1,43 @@
+<!-- This was created after watching this video: https://youtu.be/rSHJa1Mji_I -->
+<!-- 4-14-2021 -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navbar in JavaScript</title>
+        <style>
+            .link{
+                padding:20px;
+            }
+            .onhover{
+                background-color: black;
+                padding: 20px;
+            }
+            .onout{
+                background-color: white;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="nav">
+        </div>
+        <script>
+            // for the navbar:
+            var html="";
+            function navbar() {
+                var links=[
+                    ['Home', 'home.html'],
+                    ['About', 'about.html'],
+                    ['Contact', 'contact.html']
+                ];
+                for(var i=0; i<links.length; i++) {
+                    var str=""+links[i];
+                    str=str.split(',');
+                    html=html+"<span class='link'><a onmouseover=\"this.className='onhover'\"onmouseout=\"this.className='onout'\" href='"+str[1]+"'>"+str[0]+"</a>";
+                    document.getElementById('nav').innerHTML=html;
+                };
+            };
+            navbar();
+        </script>
+    </body>
+</html>

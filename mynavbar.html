@@ -1,0 +1,109 @@
+<!-- This was created after watching this video: https://youtu.be/rSHJa1Mji_I -->
+<!-- 4-14-2021 -->
+<!-- I'm using this file to play with the code and see what works. -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navbar in JavaScript</title>
+        <style>
+            /* for entire document */
+            body{
+                border: 2px solid blue;
+                margin: 0;
+            }
+
+            /* for main navbar */
+            #nav{
+                border: 3px dotted red;
+                padding: 20px;
+                margin: 0;
+            }
+            .link{
+                padding:10px;
+                background-color: orange;
+                padding: 0px;
+                margin: 0px;
+                border: 3px solid gold;
+                text-align: left;
+
+                /* the links are actually nested inside of each other using CSS Grid */
+                display:grid;
+                grid-template-rows: 40px;
+                grid-template-columns: 150px 150px 150px;
+            }
+            .onhover{
+                background-color: grey;
+                padding: 0px;
+                border: 3px solid green;
+            }
+            .onout{
+                background-color: pink;
+                text-decoration: none;
+                border: 1px solid red;
+            }
+
+            /* for 2nd navbar */
+            #navTwo{
+                border: 3px dotted darkgray;
+                /* padding: 20px; */
+                margin: 0;
+            }
+            .linkTwo{
+                padding:10px;
+                background-color: wheat;
+                padding: 10px;
+                margin: 0px;
+                border: 3px solid mediumaquamarine;
+                text-align: left;
+
+                /* the links are actually nested inside of each other using CSS Grid */
+                display:grid;
+                grid-template-rows: 40px;
+                grid-template-columns: 150px 150px 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- placeholder for the main navbar -->
+        <div id="nav">
+        </div>
+        <!-- creating a 2nd navbar under the first one -->
+        <div id="navTwo">
+        </div>
+        <script>
+            // for creating the main navbar
+            var html="";
+            function navbar() {
+                var links=[
+                    ['Home', 'home.html'],
+                    ['About', 'about.html'],
+                    ['Contact', 'contact.html']
+                ];
+                for(var i=0; i<links.length; i++) {
+                    var str=""+links[i];
+                    str=str.split(',');
+                    html=html+"<span class='link'><a onmouseover=\"this.className='onhover'\"onmouseout=\"this.className='onout'\" href='"+str[1]+"'>"+str[0]+"</a>";
+                    document.getElementById('nav').innerHTML=html;
+                };
+            };
+            navbar();
+
+            // for creating a 2nd navbar under the main one:
+            var htmlTwo="";
+            function navbarTwo() {
+                var linksTwo=[
+                    ['House', 'home.html'],
+                    ['Farm', 'about.html'],
+                    ['Cabin', 'contact.html']
+                ];
+                for(var iTwo=0; iTwo<linksTwo.length; iTwo++) {
+                    var strTwo=""+linksTwo[iTwo];
+                    strTwo=strTwo.split(',');
+                    htmlTwo=htmlTwo+"<span class='linkTwo'><a onmouseover=\"this.className='onhover'\"onmouseout=\"this.className='onout'\" href='"+strTwo[1]+"'>"+strTwo[0]+"</a>";
+                    document.getElementById('navTwo').innerHTML=htmlTwo;
+                };
+            };
+            navbarTwo();
+        </script>
+    </body>
+</html>
