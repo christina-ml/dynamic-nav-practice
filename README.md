@@ -19,9 +19,11 @@ JavaScript - Created a copy of the first navbar, and made a 2nd navbar to go und
 
 ## Original
 ![](original.png)
+This is how the navbar originally looks, based off the YouTube video example.
 
 ## My Navbar
 ![](mynavbar.png)
+This is how my navbar looks after updating the CSS and creating an extra copy of the navbar in JavaScript.
 
 ## Last Update
 
