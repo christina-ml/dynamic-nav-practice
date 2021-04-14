@@ -1,5 +1,14 @@
 # dynamic-nav-practice
-Dynamic navbar - playing with code.
+Dynamic navbar practice - playing with code.
+Did not separate HTMl, CSS, and JavaScript into separate files. Everything is in one file.
+
+## Table of Contents
+- [About](#about)
+- [Process](#process)
+- [Changes Made](#changes-made)
+    - [Original Navbar](#original)
+    - [My Navbar](#my-navbar)
+- [Last Update](#last-update)
 
 ## About
 
@@ -17,13 +26,13 @@ CSS - made boxes laid out more clearly, and adjusted colors to see what is reall
 
 JavaScript - Created a copy of the first navbar, and made a 2nd navbar to go underneath it.
 
-## Original
+### Original Navbar
 ![](original.png)
-This is how the navbar originally looks, based off the YouTube video example.
+(screenshot) This is how the navbar originally looks, based off the YouTube video example.
 
-## My Navbar
+### My Navbar
 ![](mynavbar.png)
-This is how my navbar looks after updating the CSS and creating an extra copy of the navbar in JavaScript.
+(screenshot) This is how my navbar looks after updating the CSS and creating an extra copy of the navbar in JavaScript.
 
 ## Last Update
 
