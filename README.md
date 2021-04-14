@@ -1,6 +1,6 @@
 # dynamic-nav-practice
 Dynamic navbar practice - playing with code.
-Did not separate HTMl, CSS, and JavaScript into separate files. Everything is in one file.
+Did not separate HTML, CSS, and JavaScript into separate files. Everything is in one file.
 
 ## Table of Contents
 - [About](#about)
