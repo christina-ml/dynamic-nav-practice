@@ -7,7 +7,7 @@ I am learning how to create a navbar dynamically using JavaScript for Front End 
 
 ## Process
 
-While watching this YouTube Video [Web Designing- lab javascript dynamic navbar]('https://youtu.be/rSHJa1Mji_I'), I recreated the code to see how they did it. I am calling this the "original" file.
+While watching this YouTube Video [Web Designing- lab javascript dynamic navbar](https://youtu.be/rSHJa1Mji_I), I recreated the code to see how they did it. I am calling this the "original" file.
 
 Next, I created a copy of the original file, and am using this file to play with the code and see what works/doesn't work.
 
@@ -16,6 +16,12 @@ Next, I created a copy of the original file, and am using this file to play with
 CSS - made boxes laid out more clearly, and adjusted colors to see what is really going on.
 
 JavaScript - Created a copy of the first navbar, and made a 2nd navbar to go underneath it.
+
+## Original
+![](original.png)
+
+## My Navbar
+![](mynavbar.png)
 
 ## Last Update
 
